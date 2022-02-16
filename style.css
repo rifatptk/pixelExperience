@@ -1,0 +1,113 @@
+
+
+
+
+:root {
+  --primary: #2196f3;
+  --primary-shade: #64b5f6;
+  --text-clr: #fff;
+  --text-lighter: #c4c4c4;
+  --text-dark: var(--primary);
+  --body-bg: #2d2d2d;
+  --body-bg-dark: #181717;
+  --font-sans: "Google Sans",sans-serif;
+  --footer-bg: var(--body-bg-dark);
+  --about-bg: var(--body-bg-dark);
+  --contribute-bg: var(--body-bg);
+  --menu-hover: var(--body-bg-dark);
+  --card-text-clr: #fff;
+  --card-text-lighter: #c4c4c4;
+  --card-bg: var(--body-bg-dark);
+  --card-bg-hover: var(--body-bg-dark);
+  --menu-mobile-hover: #4a5568;
+}
+
+/* brand start */
+
+#navigationbar{
+  background: var(--body-bg);
+  padding: 42px 103px;
+  display: flex;
+  justify-content: space-between;
+}
+#pixelexperience{
+  position: relative;
+}
+#pixelexperience a{
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  position: relative;
+}
+#pixelexperience a span{
+  font-weight: 400;
+}
+#pixelexperience a::before{
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  background: red;
+}
+#pixelexperience a::after{
+  content: "";
+  width: 28px;
+  height: 2px;
+  position: absolute;
+  top: 36px;
+  left: 70px;
+  background: yellow;
+}
+#pixelexperience a span::before{
+  content: "";
+  width: 45px;
+  height: 2px;
+  position: absolute;
+  top: 36px;
+  left: 105px;
+  background: green;
+}
+#pixelexperience a span::after{
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  top: 36px;
+  left: 150px;
+  background: var(--primary);
+}
+/* brand end */
+
+/* navigation start */
+#navlinks-container{
+  display: flex;
+  list-style: none;
+  }
+.navlink-element{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.navlink-element.active{
+  background: var(--primary);
+}
+.navlink-element:hover:not(.active){
+  background: black;
+}
+.navlink-i{
+  color: white;
+  }
+.navlink-a{
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+}
+.navlink-a:hover{
+  color: white;
+}
+/* navigation end */
