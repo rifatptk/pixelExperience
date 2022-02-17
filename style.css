@@ -84,6 +84,11 @@
 /* brand end */
 
 /* navigation start */
+#navbtn{
+  display: none;
+}
+
+
 #navlinks-container{
   display: flex;
   list-style: none;
@@ -120,6 +125,19 @@
 /* navigation end */
 /* making navigation responsive start */
 @media (max-width:768px){
+  #navbtn{
+    height: 50px;
+    width: 50px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    color: #fff;
+  }
   #navlinks-container{
     display:none;
     
