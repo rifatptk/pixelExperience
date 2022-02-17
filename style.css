@@ -22,6 +22,7 @@
   --menu-mobile-hover: #4a5568;
 }
 
+
 /* brand start */
 
 #navigationbar{
@@ -93,7 +94,6 @@
   display: flex;
   list-style: none;
   justify-content: space-around;
-  padding-left: ;
   }
   
 .navlink-element{
@@ -148,3 +148,34 @@
   
 }
 /* making navigation responsive end */
+
+/* hero search bar start */
+
+#top-search{
+  background: var(--primary);
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+#searchbox{
+  min-width: 600px;
+  background-color: var(--primary-shade);
+  border: none ;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 5px 2px 8px 25px;
+  color: white;
+  font-weight: 500;
+  
+  
+}
+@media (max-width: 768px){
+  #searchbox{
+    min-width: 80vw;
+    font-size: 16px;
+  }
+}
+#searchbox::placeholder{
+  color: white;
+}
+/* hero search bar end */
