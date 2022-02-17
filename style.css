@@ -86,15 +86,12 @@
 /* brand end */
 
 /* navigation start */
-#navbtn{
-  display: none;
-}
 
 
-#navlinks-container{
+.navlinks-container{
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-around;  
   }
   
 .navlink-element{
@@ -124,30 +121,88 @@
   color: white;
 }
 /* navigation end */
+
 /* making navigation responsive start */
 @media (max-width:768px){
-  #navbtn{
+  .navbtn{
+    padding: 15px 0;
     height: 50px;
     width: 50px;
     display: flex;  
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background: var(--primary);
     position: absolute;
     bottom: 20px;
     right: 20px;
     border-radius: 100%;
-    color: #fff;
+    z-index: 11;
+    transition: 200ms;
+    cursor: pointer;
   }
-  #navlinks-container{
+
+  .navbtn::before, .navbtn::after{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+  }
+
+
+/* nav button clicked start */
+  .clicked{
+    padding: 22px;
+    
+}
+
+
+.clicked::before, .clicked::after{
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+}
+.clicked::before{
+  transform: rotate(45deg);
+}
+.clicked::after{
+  transform: rotate(-45deg);
+}
+
+
+/* nav button clicked end */
+  
+  .navlinks-container{
     display:none;
     
   }
   #pixelexperience{
     margin: auto;
   }
+/* mobile navigation menu start */
+  .mobnav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 4px;
+    right: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px;
+    background: var(--primary);
+    padding: 20px;
+    padding-bottom: 50px;
+    z-index: 10;
+   /* mobile navigation menu ends */ 
+    
+  }
+  
   
 }
+
+
 /* making navigation responsive end */
 
 /* hero search bar start */
