@@ -27,10 +27,11 @@
 
 #navigationbar{
   background: var(--body-bg);
-  padding: 44px 103px;
+  padding: 40px 103px;
   display: flex;
   justify-content: space-between;
-  
+  align-items: baseline;
+    
 }
 #pixelexperience{
   position: relative;
