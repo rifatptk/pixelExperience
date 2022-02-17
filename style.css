@@ -26,12 +26,14 @@
 
 #navigationbar{
   background: var(--body-bg);
-  padding: 42px 103px;
+  padding: 44px 103px;
   display: flex;
   justify-content: space-between;
+  
 }
 #pixelexperience{
   position: relative;
+  min-width: 215px;
 }
 #pixelexperience a{
   color: white;
@@ -54,12 +56,12 @@
 }
 #pixelexperience a::after{
   content: "";
-  width: 28px;
+  width: 27px;
   height: 2px;
   position: absolute;
   top: 36px;
   left: 70px;
-  background: yellow;
+  background: rgb(255, 174, 0);
 }
 #pixelexperience a span::before{
   content: "";
@@ -67,7 +69,7 @@
   height: 2px;
   position: absolute;
   top: 36px;
-  left: 105px;
+  left: 106px;
   background: green;
 }
 #pixelexperience a span::after{
@@ -85,12 +87,16 @@
 #navlinks-container{
   display: flex;
   list-style: none;
+  justify-content: space-around;
+  padding-left: ;
   }
+  
 .navlink-element{
-  padding: 10px 20px;
+  padding: 8px 25px;
+  margin: 0 10px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 6px;
   
 }
 .navlink-element.active{
@@ -106,8 +112,21 @@
   text-decoration: none;
   color: white;
   padding-left: 5px;
+  font-weight: 500;
 }
 .navlink-a:hover{
   color: white;
 }
 /* navigation end */
+/* making navigation responsive start */
+@media (max-width:768px){
+  #navlinks-container{
+    display:none;
+    
+  }
+  #pixelexperience{
+    margin: auto;
+  }
+  
+}
+/* making navigation responsive end */
